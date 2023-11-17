@@ -1,0 +1,53 @@
+
+@media only screen and (max-width:768px){
+    .outdoor-title {
+        font-size: 1rem;
+        letter-spacing: 2rem;
+    }
+    .outdoor-sub-title {
+        font-size: 2rem;
+    }
+    .yoga_title {
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+    .youcan {
+        transform: translate(-50%,-50%);
+        left: 50%;
+        font-size: 1rem;
+    }
+    .card-custom {
+        margin-bottom: 15px;
+    }
+    .contant-form {
+        width: 100%;
+        padding: 2rem 2rem;
+    }
+    .mid_sec_bg {
+        margin-top: 6rem;
+    }
+    .mid_sec_bg {
+        height: 125vh;
+    }
+    .start-booking-main {
+        background-size: auto;
+    }
+  
+}
+
+@media (min-width:800px) and (max-width:950px){
+
+    .popular-title {
+        font-size: 23px;
+    }
+    
+    .tour-list {
+        padding: 0 1rem;
+    }
+    
+    .contant-form {
+        width: 100%;
+        padding: 3rem 3rem
+    }
+    
+}

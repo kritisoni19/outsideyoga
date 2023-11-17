@@ -1,0 +1,400 @@
+*{
+    box-sizing: border-box;
+}
+ul{
+    padding-left: 0;
+}
+ul li{
+    list-style-type: none;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #dfdfd8;
+}
+.bg-hero{
+   
+    background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.6), rgba(40, 180, 133, 0.6)), url(../images/pexels-min-an-1234035.jpg);
+    height: 100vh;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+         clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+}
+
+.bg-bars{
+    background: white;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.yogaLogo{
+    width:70px;
+    height: 70px;
+}
+.outdoor-title{
+    color: white;
+    font-size: 5rem;
+    text-align: center;
+    line-height: 60px;
+    letter-spacing: 2rem;
+    font-weight: 400;
+}
+.outdoor-sub-title {
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    line-height: 3rem;
+    margin-top: 3rem;
+    letter-spacing: 1rem;
+} 
+
+.discover-tour{
+    background: white;
+    font-size: 23px;
+    border-radius: 50px;
+    padding: 8px 30px;
+    color: #777;
+    font-weight: 400;
+    font-family: 'Montserrat';
+    letter-spacing: 3px;
+}
+.mt-5rem{
+    margin-top: 8rem;
+}
+
+/* button effect  start*/
+.discover-tour:hover, 
+.discover-tour:focus,.discover-tour:active {
+  animation: discover-tour 1s;
+  box-shadow: 0 0 0 2em transparent;
+  transform: translateY(-2px);
+}
+
+@keyframes discover-tour {
+  0% { box-shadow: 0 0 0 0 rgba(126, 213, 111, 0.6); }
+}
+/* button effect end*/
+.compose-pic{
+    transition: all 0.2s;
+    outline-offset: 2rem;
+    width: 100%;
+    border-radius: 50px;
+}
+.yoga_title{
+    color: #20c063;
+    font-weight: 500;
+    font-size: 3rem;
+    margin-bottom: 5rem;
+    margin-top: 3rem;
+    transition: all 0.2s;
+}
+.yoga_title:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.youcan{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    font-size: 4rem;
+    color: white;
+    font-weight: 700;
+}
+.mid_sec_bg{
+    background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.6), rgba(40, 180, 133, 0.6)), url(../images/hero2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: skewY(-7deg);
+    margin-top: 12rem;
+}
+.main-card-sec{
+    transform: skewY(7deg);
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+.card-custom{
+    padding: 25px;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    min-height: 260px;
+}
+.card-custom:hover{
+    transform: translateY(-1.5rem) scale(1.03);
+}
+.cards-title{
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.wd-370{
+    width: 370px;
+    height: 246px;
+}
+.flip-card1 {
+  background-color: transparent;
+  width: 370px;
+  height: 500px;
+  perspective: 1000px;
+}
+
+.flip-card-inner1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card1:hover .flip-card-inner1 {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front1, .flip-card-back1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front1 {
+  background-color: #fff;
+  color: black;
+}
+
+.flip-card-back1 {
+  background-color: #2e99df;
+  color: white;
+  transform: rotateY(180deg);
+}
+ /* second flip card */
+ .flip-card2 {
+    background-color: transparent;
+    width: 370px;
+    height: 500px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card2:hover .flip-card-inner2 {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front2, .flip-card-back2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front2 {
+    background-color: #fff;
+    color: black;
+  }
+  
+  .flip-card-back2 {
+    background-color: #20c063;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  /* flip card 3 */
+  .flip-card3 {
+    background-color: transparent;
+    width: 370px;
+    height: 500px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner3 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card3:hover .flip-card-inner3 {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front3, .flip-card-back3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front3 {
+    background-color: #fff;
+    color: black;
+  }
+  
+  .flip-card-back3 {
+    background-color: #7479ef;
+    color: white;
+    transform: rotateY(180deg);
+  }
+.popular-title{
+    position: absolute;
+    top: 41%;
+    right: 0%;
+    font-size: 25px;
+    font-weight: 600;
+    background: #3268a2;
+    color: white;
+    padding: 2px 10px;
+}
+.montain-clr{
+    background-color: #7479ef;
+}
+.forest-clr{
+    background-color: #20c063;
+}
+.tour-list{
+    padding: 0 3rem;
+}
+.tour-list li{
+    border-bottom: 1px solid #d7d1d1;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+.tour-list li:last-child{
+border-bottom: none;
+}
+.flip_card_back_inner{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.price-title{
+    font-size: 25px;
+}
+.price-value{
+    font-size: 4rem;
+    font-weight: 400;
+}
+.book-now-btn{
+    background: white;
+    padding: 18px 38px;
+    border-radius: 50px;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 5rem;
+}
+.book-now-btn:hover{
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+.book-now-btn-clr{
+    background: #20c063;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+@media (min-width: 576px){
+    .modal-dialog {
+        max-width: 800px;
+    }
+}
+.modal_title{
+    color: #20c063;
+    font-weight: 500;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    transition: all 0.2s;
+}
+.mesg{
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.imp{
+    font-weight: 600;
+    color: red;
+}
+.fs-15{
+    font-size: 15px;
+}
+.contact-bg{
+    background-color: #55c57a;
+}
+.start-booking-main{
+    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../images/yog.jpg);
+    background-size: 100%;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+    margin: 8rem 0;
+    background-repeat: no-repeat;
+}
+.contant-form{
+    width: 50%;
+    padding: 5rem 5rem;
+}
+.next-btn{
+    padding: 18px 38px;
+    border-radius: 50px;
+    font-size: 18px;
+    line-height: 25px;
+    background: #20c063;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+.next-btn:hover{
+    background-color: white;
+    color: #20c063;
+    border: 1px solid #20c063;
+}
+
+.form-control-custom{
+    height: 55px;
+    border: 1px solid #e5e5e5;
+}
+.start-booking-title{
+    color: #20c063;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 0rem;
+    transition: all 0.2s;
+}
+.start-booking-title:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.footer-bg{
+    background-color: black;
+  
+
+}
+.footer-content{
+    padding: 5px;
+    color: white;
+    margin-bottom: 0;
+    text-align: center;
+}
